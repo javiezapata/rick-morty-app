@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rick and Morty API Viewer
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+Esta aplicación web consume la API pública de **Rick and Morty** y permite explorar una lista de personajes con detalles básicos, así como filtrar y analizar la información de los personajes mediante gráficos. Los usuarios pueden ver detalles individuales de cada personaje, filtrar la lista por nombre, especie y estado, y generar gráficos para visualizar estadísticas sobre las especies y episodios.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Características
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Lista de personajes**: Obtén una lista de personajes de la serie con detalles como nombre, especie, estado, etc.
+- **Filtro por nombre**: Filtra los personajes por nombre.
+- **Filtros avanzados**: Filtra por estado (`alive`, `dead`, `unknown`) y especie (`human`, `alien`, etc.).
+- **Gráficos**: Visualiza gráficos de barras o pastel que analizan la cantidad de personajes según una categoría (especie, episodio).
+- **Detalles de personajes**: Accede a una página con información detallada de un personaje seleccionado.
+- **Interfaz responsiva**: La aplicación está diseñada para ser utilizada tanto en dispositivos móviles como en escritorio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologías
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**:
+  - React.js con **TypeScript**
+  - **Next.js** para el enrutamiento y renderizado del lado del servidor.
+  - **Tailwind CSS** para el diseño responsivo y moderno.
+  - **Shadcn/UI** (o Radix UI) para componentes de interfaz.
+  - **Recharts** para gráficos.
 
-## Learn More
+- **Backend**:
+  - **API pública de Rick and Morty**: https://rickandmortyapi.com/
 
-To learn more about Next.js, take a look at the following resources:
+## Instalación
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerrequisitos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Asegúrate de tener **Node.js** (v16 o superior) y **npm** o **yarn** instalados.
 
-## Deploy on Vercel
+### Pasos para instalar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clona el repositorio:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```
+    https://github.com/javiezapata/rick-morty-app.git
+   cd rick-and-morty-api-viewer
+   ```
+2. Instalar depedencias
+   Dentro de la carpeta del proyecto, instala todas las dependencias necesarias con npm o yarn:
+   ```
+   npm install
+   yarn install
+   ```
+3.  Ejecuta la aplicación en desarrollo:
+   ```
+   npm run dev
+   yarn dev
+   ```
+
+## Uso
+1. Página principal: En la página principal, puedes ver una lista de personajes de Rick and Morty. Puedes filtrar por nombre, especie y estado utilizando los controles disponibles.
+2. Gráfico: La página también incluye un gráfico interactivo que muestra el número de personajes agrupados por una categoría, como especie o episodio.
+3. Detalles de un personaje: Haz clic en cualquier personaje para ver detalles más completos sobre él, incluyendo su imagen, ubicación y episodio.
