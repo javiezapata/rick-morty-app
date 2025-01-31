@@ -4,6 +4,9 @@
 
 Esta aplicación web consume la API pública de **Rick and Morty** y permite explorar una lista de personajes con detalles básicos, así como filtrar y analizar la información de los personajes mediante gráficos. Los usuarios pueden ver detalles individuales de cada personaje, filtrar la lista por nombre, especie y estado, y generar gráficos para visualizar estadísticas sobre las especies y episodios.
 
+![image](https://github.com/user-attachments/assets/e364a358-ebd4-4b44-ae93-d224519459af)
+
+
 ## Características
 
 - **Lista de personajes**: Obtén una lista de personajes de la serie con detalles como nombre, especie, estado, etc.
